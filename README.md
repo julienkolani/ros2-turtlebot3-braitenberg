@@ -1,22 +1,19 @@
 # ROS2 TurtleBot3 Braitenberg
 
-A ROS2 Python package implementing Braitenberg vehicle behaviors on TurtleBot3. Demonstrates reactive robot control where motor outputs are directly coupled to sensor inputs, producing emergent behaviors without explicit planning.
+Package ROS2 Python implémentant les véhicules de Braitenberg sur TurtleBot3.
 
-## Overview
+## Présentation
 
-Braitenberg vehicles exhibit complex-seeming behaviors (attraction, repulsion, fear, aggression) through simple sensor-motor coupling. This package applies the concept to TurtleBot3 using ROS2 sensor topics.
+Les véhicules de Braitenberg produisent des comportements complexes (attraction, répulsion, peur) par simple couplage direct capteurs → moteurs, sans planification explicite. Ce package applique ce principe au TurtleBot3 via les topics ROS2.
 
-## Tech Stack
+## Stack technique
 
-- Python
-- ROS2 (Humble or later)
-- TurtleBot3
+- Python, ROS2, TurtleBot3
 
-## Setup
+## Installation
 
 ```bash
 source /opt/ros/humble/setup.bash
-colcon build
-source install/setup.bash
+colcon build && source install/setup.bash
 ros2 run py_turtlebot_braitenberg simple_braitenberg
 ```
